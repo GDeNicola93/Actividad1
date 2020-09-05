@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+/*Header (Se repite en todas las paginas)*/
+header{
+    background-color: dodgerblue;
+    text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 50px;
+}
+
+header h1 {
+    letter-spacing: 25px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+header p {
+    font-size: 20px;
+    letter-spacing: 10px;
+    color: white;
+}
+
+section header {
+    background-color:white;
+    text-align: center;
+	font-family: 'Bree Serif', serif;
+	letter-spacing: 10px;
+}
+
+
+/*Footer (Se repite en todas las paginas)*/
+footer{
+    padding: 5px;
+    text-align: center;
+    background-color: dodgerblue;
+    margin-top: 25px;
+}

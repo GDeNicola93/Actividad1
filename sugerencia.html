@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sugerencias</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <link href="css/sugerencia.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <h1>TODO EN 1</h1>
+      <p>~Una página con links de tu Interes~</p>
+    </header>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <a class="navbar-brand" href="index.html">Todo en 1</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="videos.html">Videos</a>
+          <a class="nav-item nav-link" href="musica.html">Música</a>
+          <a class="nav-item nav-link" href="noticias.html">Noticias</a>
+          <a class="nav-item nav-link active" href="sugerencia.html"
+            >Sugerencias</a
+          >
+          <a class="nav-item nav-link" href="adivinanza.html">Adivinanza</a>
+        </div>
+      </div>
+    </nav>
+    <section>
+      <header>
+        <hr />
+        <h2>Envio de sugerencias</h2>
+        <hr />
+      </header>
+      <div class="container">
+        <form action="#" class="was-validated">
+          <div class="row">
+            <div class="col-md">
+              <div class="form-group">
+                <label for="Nombre">Nombre:</label>
+                <input
+                  type="text"
+                  pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ ]{3,}"
+                  maxlength="20"
+                  class="form-control is-valid"
+                  id="nombre"
+                  placeholder="Nombre"
+                  required
+                />
+                <div class="invalid-feedback">*Dato obligatorio</div>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="form-group">
+                <label for="Apellido">Apellido:</label>
+                <input
+                  type="text"
+                  pattern="[a-zA-ZñÑáéíóúÁÉÍÓÚ ]{3,}"
+                  maxlength="20"
+                  class="form-control is-valid"
+                  id="apellido"
+                  placeholder="Apellido"
+                  required
+                />
+                <div class="invalid-feedback">*Dato obligatorio</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email:</label>
+            <input
+              type="email"
+              pattern="{1,}"
+              class="form-control is-valid"
+              id="nombre"
+              placeholder="Email"
+              required
+            />
+            <div class="invalid-feedback">*Dato obligatorio</div>
+          </div>
+          <div class="form-group">
+            <label for="Sugerencia">Sugerencias:</label>
+            <textarea
+              maxlength="120"
+              placeholder="Escriba sus sugerencias aqui..."
+              name="sugerencia"
+              id="sugerencia"
+              class="form-control is-valid"
+              required
+            ></textarea>
+            <div class="invalid-feedback">
+              *Dato obligatorio.Puede tener como maximo 120 caracteres.
+            </div>
+          </div>
+          <div class="form-group">
+            <input
+              class="btn btn-outline-primary"
+              type="submit"
+              value="Enviar Sugerencia"
+            />
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col">
+          <p>©Realizada para Actividad 1 del Programa Clip.</p>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
